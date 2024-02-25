@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,50 +8,55 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Orbitron:wght@400..900&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Orbitron:wght@400..900&display=swap"
+        rel="stylesheet">
     <title>Calculator</title>
 </head>
+
 <body>
     <div class="page">
-        <header class="header">
+        <!-- <header class="header">
             <h1>Calculator</h1>
-        </header>
+        </header> -->
         <main class="main">
             <section class="calculator-section">
                 <div class="box-wrapper">
                     <form action="">
                         <div class="text-box">
-                            <input type="text" class="value-box"></input>
+                            <!-- <div class="operation-value-box">+</div> -->
+                            <input type="text" class="value-box" placeholder="00" id="js-value-box" maxlength="5"
+                                readonly></input>
                         </div>
                         <div class="button-box-wrap">
                             <div class="button-box">
-                                <button class="btn value-btn">C</button>
-                                <button class="btn value-btn">_</button>
-                                <button class="btn value-btn">%</button>
-                                <button class="btn sign-btn">/</button>
+                                <button class="btn sign-btn" id="js-clear-value">C</button>
+                                <button class="btn sign-btn" id="js-clear-single-value">D</button>
+                                <!-- <button class="btn sign-btn">%</button> -->
+                                <button class="btn sign-btn value">/</button>
                             </div>
                             <div class="button-box">
-                                <button class="btn value-btn">7</button>
-                                <button class="btn value-btn">8</button>
-                                <button class="btn value-btn">9</button>
-                                <button class="btn sign-btn">*</button>
+                                <button class="btn value-btn value" accesskey="7">7</button>
+                                <button class="btn value-btn value" accesskey="8">8</button>
+                                <button class="btn value-btn value" accesskey="9">9</button>
+                                <button class="btn sign-btn value">*</button>
                             </div>
                             <div class="button-box">
-                                <button class="btn value-btn">4</button>
-                                <button class="btn value-btn">5</button>
-                                <button class="btn value-btn">6</button>
-                                <button class="btn sign-btn">-</button>
+                                <button class="btn value-btn value" accesskey="4">4</button>
+                                <button class="btn value-btn value" accesskey="5">5</button>
+                                <button class="btn value-btn value" accesskey="6">6</button>
+                                <button class="btn sign-btn value">-</button>
                             </div>
                             <div class="button-box">
-                                <button class="btn value-btn">1</button>
-                                <button class="btn value-btn">2</button>
-                                <button class="btn value-btn">3</button>
-                                <button class="btn sign-btn">+</button>
+                                <button class="btn value-btn value" accesskey="1">1</button>
+                                <button class="btn value-btn value" accesskey="2">2</button>
+                                <button class="btn value-btn value" accesskey="3">3</button>
+                                <button class="btn sign-btn value">+</button>
                             </div>
                             <div class="button-box">
-                                <button class="btn value-btn">0</button>
-                                <button class="btn value-btn">.</button>
-                                <button class="btn sign-btn merge-btn">=</button>
+                                <button class="btn value-btn value">.</button>
+                                <button class="btn value-btn value" accesskey="0">0</button>
+                                <button class="btn sign-btn equal-btn" id="js-equal-btn">=</button>
                                 <!-- <button class="btn">sign</button> -->
                             </div>
                         </div>
@@ -58,14 +64,15 @@
                 </div>
             </section>
         </main>
-        <footer class="footer">
-           <div>
-            <h2>Calculator</h2>
-            <p>by <a href="" target="_blank">Vinesh Gurram</a></p>
-           </div>
-        </footer>
+        <!-- <footer class="footer">
+            <div>
+                <h2>Calculator</h2>
+                <p>by <a href="" target="_blank">Vinesh Gurram</a></p>
+            </div>
+        </footer> -->
         <audio id="clickSound" src="assets/click-sound.wav"></audio>
     </div>
     <script src="js/script.js"></script>
 </body>
+
 </html>
